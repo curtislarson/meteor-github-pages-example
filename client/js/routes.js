@@ -1,3 +1,5 @@
+Meteor.disconnect();
+
 Router.route("/", {
   name: "index",
   action: function() {
