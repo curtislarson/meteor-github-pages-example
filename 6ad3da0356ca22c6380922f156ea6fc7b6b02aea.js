@@ -121,5 +121,5 @@ Mongo=Package.mongo.Mongo,Session=Package.session.Session,$=Package.jquery.$,jQu
 
 (function(){Template.__checkName("quack"),Template.quack=new Template("Template.quack",function(){var a=this;return"Quack Quack!"})}).call(this);
 
-(function(){Router.route("/",{name:"index",action:function(){this.render("index")}}),Router.route("/quack",{name:"quack",action:function(){this.render("quack")}})}).call(this);
+(function(){Meteor.disconnect(),Router.route("/",{name:"index",action:function(){this.render("index")}}),Router.route("/meteor-github-pages-example",{name:"index2",action:function(){this.render("index")}}),Router.route("/meteor-github-pages-example/quack",{name:"quack",action:function(){this.render("quack")}})}).call(this);
 
